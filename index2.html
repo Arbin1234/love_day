@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Love Day ❤️</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            overflow: hidden;
+        }
+
+        .card {
+            width: 90%;
+            max-width: 500px;
+            padding: 40px 25px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 25px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 2;
+        }
+
+        .heart {
+            font-size: 70px;
+            animation: heartbeat 1.2s infinite;
+        }
+
+        h1 {
+            color: #ff3366;
+            font-size: 42px;
+            margin: 15px 0;
+        }
+
+        h2 {
+            color: #555;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #666;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .date {
+            margin-top: 20px;
+            color: #ff3366;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        /* Heart animation */
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        /* Confetti */
+        .confetti {
+            position: fixed;
+            top: -20px;
+            width: 10px;
+            height: 10px;
+            animation: fall linear infinite;
+            z-index: 1;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-20px) rotate(0deg);
+            }
+
+            100% {
+                transform: translateY(110vh) rotate(720deg);
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .card {
+                padding: 30px 20px;
+            }
+
+            .heart {
+                font-size: 55px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Confetti -->
+    <div class="confetti" style="left:5%; animation-duration:4s; background:#ff3366;"></div>
+    <div class="confetti" style="left:15%; animation-duration:6s; background:#ffd166;"></div>
+    <div class="confetti" style="left:25%; animation-duration:5s; background:#06d6a0;"></div>
+    <div class="confetti" style="left:35%; animation-duration:7s; background:#8338ec;"></div>
+    <div class="confetti" style="left:45%; animation-duration:4.5s; background:#ff006e;"></div>
+    <div class="confetti" style="left:55%; animation-duration:6s; background:#3a86ff;"></div>
+    <div class="confetti" style="left:65%; animation-duration:5s; background:#ffd166;"></div>
+    <div class="confetti" style="left:75%; animation-duration:7s; background:#06d6a0;"></div>
+    <div class="confetti" style="left:85%; animation-duration:5s; background:#ff3366;"></div>
+    <div class="confetti" style="left:95%; animation-duration:6s; background:#8338ec;"></div>
+
+    <!-- Main Card -->
+    <div class="card">
+
+        <div class="heart">❤️</div>
+
+        <h1>Happy Love Day!</h1>
+
+        <h2>7 October 💕</h2>
+
+        <p>
+            You make every ordinary moment feel special.
+            Thank you for bringing so much happiness,
+            laughter, and love into my life. ❤️
+        </p>
+
+        <div class="date">
+            With Love, Always 💖
+        </div>
+
+    </div>
+
+</body>
+</html>
